@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewText"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Inbox"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:id="@+id/myMessages"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.84"></ListView>
+
+    <Button
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:onClick="Logout"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:onClick="goToAdd"
+        android:layout_weight="0.06"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
